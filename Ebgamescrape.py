@@ -4,7 +4,10 @@ import time
 import os
 from bs4 import BeautifulSoup as Bsoup
 
-url = "https://ebgames.com.au/search?q=Skyrim"
+print ("What do you want to search for on EbGames:")
+sea = input (":")
+
+url = "https://ebgames.com.au/search?q=" + (sea)
 resp = requests.get(url)
 soup = Bsoup(resp.text, 'html.parser')
 platforms = soup.select(".product-top-level-group")
