@@ -1,0 +1,92 @@
+<html>
+<body>
+
+    <script>
+
+
+        var what = new Array("Your answer is mine!", "I don't quite know..", "Who knows...");
+
+        var should = new Array("Yes, yes you should..", "Don't, please don't", "Must!");
+
+        var isvar = new Array("I believe so.", "No, not at all.....");
+
+        var amvar = new Array("Yes, definetly", "No, not at all.....");
+
+        var whyvar = new Array("Your answer is mine...", "I dont quite know..");
+
+        var can = new Array("Yes, indeed", "No.... Idiot!", "Im not sure..");
+
+        var will = new Array("Yes, indeed", "No.....Idiot!", "Im Not sure...");
+
+        var question = prompt("The answer resides within your question, which is..?");
+
+        var first = question.replace(/ .*/,'');
+
+        function random_item(items)
+            {
+                return items[Math.floor(Math.random()*items.length)];
+            }
+
+        var rwhat = random_item(what);
+        var rshoud = random_item(should);
+        var ris = random_item(isvar);
+        var ram = random_item(amvar);
+        var rwhy = random_item(whyvar);
+        var rcan = random_item(can);
+        var rwill = random_item(will);
+
+        switch (first) {
+            case "what":
+            document.write(rwhat);
+            break;
+            case "What":
+            document.write(rwhat);
+            break;
+            case "Should":
+            document.write(rshoud);
+            break;
+            case "should":
+            document.write(rshoud);
+            break;
+            case "is":
+            document.write(ris);
+            break;
+            case "Is":
+            document.write(ris);
+            break;
+            case "Am":
+            document.write(ram);
+            break;
+            case "am":
+            document.write(ram);
+            break;
+            case "Why":
+            document.write(rwhy);
+            break;
+            case "why":
+            document.write(rwhy);
+            break;
+            case "Can":
+            document.write(rcan);
+            break;
+            case "can":
+            document.write(rcan);
+            break;
+            case "Will":
+            document.write(rwill);
+            break;
+            case "will":
+            document.write(rwill);
+            break;
+            default:
+            document.write("bobert")
+            break;
+
+        }
+        
+        
+
+        </script>
+
+</body>
+</html>
